@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * p or n
+ * positive or negative.
  * Return:  0 
  */
 int main(void){
