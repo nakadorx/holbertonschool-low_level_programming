@@ -3,7 +3,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
+ * p or n
+ * Return:  0 
  */
 int main(void){
     int n;
