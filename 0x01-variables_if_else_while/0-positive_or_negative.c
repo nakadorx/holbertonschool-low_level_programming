@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
+ * positive or negative
  */
 int main(void){
     int n;
