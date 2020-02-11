@@ -18,7 +18,7 @@ printf("%d, ", i);
 i++;
 }
 }
-else if (n >= 98)
+else if (i >= 98)
 {
 while (i >= 98)
 {
