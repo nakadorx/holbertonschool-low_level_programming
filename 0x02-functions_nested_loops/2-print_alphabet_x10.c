@@ -17,4 +17,3 @@ _putchar(x);
 _putchar('\n');
 }
 }
-
