@@ -17,6 +17,7 @@ else
 printf("%d, ", i);
 i++;
 }
+printf("\n");
 }
 else if (i >= 98)
 {
@@ -28,10 +29,10 @@ else
 printf("%d, ", i);
 i--;
 }
+printf("\n");
 }
 else
 {
-printf("") 
+printf("%d", n);
 }
-
 }
