@@ -3,7 +3,6 @@
  * jack_bauer - Entry point
  * Return: Always 0 (success)
  */
-
 void jack_bauer(void)
 {
 int h, m;
