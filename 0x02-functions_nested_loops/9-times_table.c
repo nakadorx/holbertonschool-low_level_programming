@@ -18,7 +18,10 @@ if (y != 9)
 {
 _putchar(',');
 _putchar(' ');
+if (x * (y + 1) <= 10)
+{
 _putchar(' ');
+}
 }
 }
 else
