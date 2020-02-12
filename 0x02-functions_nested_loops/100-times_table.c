@@ -10,7 +10,7 @@
     int x, y;
     if (n > 15 || n < 0)
     {
-    _putchar('\0');
+    _putchar('0');
     }
     else
     {
