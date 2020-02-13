@@ -8,26 +8,26 @@
 void print_triangle(int size)
 {
 int x, y;
-if (n > 0)
+if (size > 0)
 {
-for (x = 0 ; x < n ; x++)
+for (x = 0 ; x < size ; x++)
 {
-for (y = 0 ; y < n ; y++)
+for (y = 0 ; y < size ; y++)
 {
-if (y < n - x - 1)
+if (y < size - x - 1)
 {
-putchar('-');
+_putchar(' ');
 }
 else
 {
-putchar('#');
+_putchar('#');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 else
 {
-putchar('\n');
+_putchar('\n');
 }
 }
