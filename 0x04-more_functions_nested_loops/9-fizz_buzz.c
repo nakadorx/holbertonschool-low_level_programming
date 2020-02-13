@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - check the code for Holberton School students.
+ * main -  Holberton School students.
  *
  * Return: Always 0.
  */
@@ -28,5 +27,6 @@ else
 printf("%d ", i);
 }
 }
-putchar('\n');
+printf("\n");
+return (0);
 }
