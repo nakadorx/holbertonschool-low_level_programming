@@ -6,7 +6,7 @@
  * Return: Always 0.
  */
 
-void main(void)
+int main(void)
 {
 int i;
 for (i = 1 ; i <= 100 ; i++)
@@ -28,4 +28,5 @@ else
 printf("%d ", i);
 }
 }
+putchar('\n');
 }
