@@ -7,11 +7,17 @@
 
 void print_number(int n)
 {
-int x = 9, y = 90, v = 1, i, j, z = 1, a;
+int x = 9, y = 90, v = 1, i, j, z = 1, a, t;
 if (n < 0)
 {
 n = n * -1;
 _putchar('-');
+}
+if (n > 99999999)
+{
+t = n / 1000000000;
+_putchar(t + '0');
+n = n % 1000000000;
 }
 while (x < n)
 {
@@ -20,11 +26,8 @@ y = y * 10;
 v = v + 1;
 }
 for (j = 1 ; j < v ; j++)
-{
 z = z * 10;
-}
-
-for (i = 0; i  < v; i++)
+for (i = 0; i < v; i++)
 {
 a = n / z;
 n = n - (a *z);
