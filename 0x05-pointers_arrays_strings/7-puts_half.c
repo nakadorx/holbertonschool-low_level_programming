@@ -20,7 +20,7 @@ _putchar(str[x]);
 }
 else
 {
-for (x = ((i / 2) + 1) ; str[x] != '\0' ; x++ )
+for (x = ((i / 2) + 1) ; str[x] != '\0' ; x++)
 {
 _putchar(str[x]);
 }
