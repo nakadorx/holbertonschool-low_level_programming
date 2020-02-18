@@ -1,0 +1,11 @@
+ 
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
+
+void _putchar(int);
+void reset_to_98(int *n);
+
+
+
+
+#endif /* _HOLBERTON_H_ */
