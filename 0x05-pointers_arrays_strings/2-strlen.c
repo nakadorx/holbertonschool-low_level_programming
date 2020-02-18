@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* swap_int - check the code for Holberton School students.
+* _strlen - check the code for Holberton School students.
 * @s : char
 * Return: Always 0.
 */
