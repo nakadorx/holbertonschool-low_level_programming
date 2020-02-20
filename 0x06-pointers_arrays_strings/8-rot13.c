@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* leet - check the code for Holberton School students.
+* rot13 - check the code for Holberton School students.
 * @x : char
 * Return: Always 0.
 */
