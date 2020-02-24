@@ -16,12 +16,14 @@ int i = 0,j = 0;
         {
             if (s[i] == accept[j])
             {
-                return (s + i);
                 break;
             }
             j++;
         }
-        i++;
+    if (accept[j] != '\0' )
+    return (s + i);
+    i++;
     }
-return (s + i);
+
+return(0);
 }
