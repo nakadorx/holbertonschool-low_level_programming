@@ -12,8 +12,8 @@ void print_diagsums(int *a, int size)
 int i = 0, x, y;
 while (i < size)
 {
-x += *(a + (i * size + i));
-y += *(a + (i * size) + ((size - i) + 1));
+x += *(a + i * size + i);
+y += *(a + (i * size) + (size - 1 - i));
 i++;
 }
 printf("%d, %d\n", x, y);
