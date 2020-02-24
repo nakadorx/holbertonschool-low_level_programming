@@ -23,6 +23,14 @@ char *_strchr(char *s, char c)
     {
         return ('\0');
     }
+    else
+    {
+    while (s[j+1] != '\0')
+    {
+        s[j] = '\0';
+        j++;
+    }
 
+    }
     return (s);
 }
