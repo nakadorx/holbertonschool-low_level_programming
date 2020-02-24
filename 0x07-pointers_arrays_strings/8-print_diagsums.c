@@ -9,17 +9,12 @@
 
 void print_diagsums(int *a, int size)
 {
-     int i = 0, j = 0,x = 0, y = 0, p = 0;
-    while (i <= size)
-    {
-        while ( j <= size)
-        {
-            x = x + a[i][j];
-            p = size - i + 1;
-            y = y + a[i][p];
-            j++;
-        }
-        i++;
-    }
-    printf("%d, %d\n", x, y);
+int i = 0, x, y;
+while (i < size)
+{
+x += *(a + (i * size + i));
+y += *(a + (i * size) + ((size - i) + 1));
+i++;
+}
+printf("%d, %d\n", x, y);
 }
