@@ -7,12 +7,12 @@
  */
 int pn(int i, int n)
 {
-if (x < 2)
+if (n < 2)
 return (0);
-else if (i > x / 2)
+else if (i > n / 2)
 return (1);
 else
-return (pn(i + 1, x));
+return (pn(i + 1, n));
 }
 
 
