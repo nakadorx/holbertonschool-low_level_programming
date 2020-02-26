@@ -10,9 +10,9 @@ int sx(int i, int n)
 {
 if (i * i == n)
 return (i);
-if (i * i > x)
+if (i * i > n)
 return (-1);
-return (i + 1, n);
+return (sx(i + 1, n));
 }
 /**
  * _sqrt_recursion - check the code for Holberton School students.
