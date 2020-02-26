@@ -15,9 +15,10 @@ return (1 + sl(s + 1));
 }
 
 /**
- * pn - check the code for Holberton School students.
+ * pl - check the code for Holberton School students.
  * @i: int
- * @n: int
+ * @s: int
+ * @l: int
  * Return: Always 0.
  */
 
@@ -32,9 +33,8 @@ return (pl(l, i + 1, s));
 }
 
 /**
- * pn - check the code for Holberton School students.
- * @i: int
- * @n: int
+ * is_palindrome - check the code for Holberton School students.
+ * @s: int
  * Return: Always 0.
  */
 int is_palindrome(char *s)
