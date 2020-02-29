@@ -25,6 +25,6 @@ x += atoi(argv[i]);
 }
 i++;
 }
-printf("%d\n" ,x);
+printf("%d\n", x);
 return (0);
 }
