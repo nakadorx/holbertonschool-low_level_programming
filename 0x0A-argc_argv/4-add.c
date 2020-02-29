@@ -17,8 +17,6 @@ printf("Error\n");
 return (1);
 break;
 }
-else if (argc < 3)
-printf("0\n");
 else
 {
 x += atoi(argv[i]);
