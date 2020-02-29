@@ -15,7 +15,7 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-if ( atoi(argv[1])<= 0)
+if (atoi(argv[1]) <= 0)
 {
 puts("0");
 return (1);
@@ -25,12 +25,12 @@ while (x != 0)
 {
 for (i = 0; i < 5 ; i++)
 {
-    if (x >= c[i])
-    {
-        x -= c[i];
-        s++;
-        break;
-    }
+if (x >= c[i])
+{
+x -= c[i];
+s++;
+break;
+}
 }
 }
 printf("%d\n", s);
