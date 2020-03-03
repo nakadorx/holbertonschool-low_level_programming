@@ -26,7 +26,7 @@ while (s2[j])
 j++;
 }
 x = malloc((i + j + 1) * sizeof(char));
-if (x == NULL)
+if (x == 0)
 return (NULL);
 for (m = 0; m < i; m++)
 x[m] = s1[m];
