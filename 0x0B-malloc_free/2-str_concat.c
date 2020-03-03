@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * _strdup - check the code for Holberton School students.
- * @str: int
+ * str_concat - check the code for Holberton School students.
+ * @s1: int
+ * @s2: int
  * Return: Always 0.
  */
 char *str_concat(char *s1, char *s2)
@@ -24,7 +25,7 @@ else
 while (s2[j])
 j++;
 }
-x = malloc((i + j + 1) *sizeof(char));
+x = malloc((i + j + 1) * sizeof(char));
 if (x == NULL)
 return (NULL);
 for (m = 0; m < i; m++)
