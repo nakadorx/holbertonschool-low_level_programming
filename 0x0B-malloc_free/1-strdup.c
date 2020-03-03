@@ -18,8 +18,7 @@ x = malloc(i *sizeof(char));
 if (x == NULL)
 return (NULL);
 for (j = 0; j < i + 1; j++)
-{
 x[j] = str[j];
-}
+x[j] = '\0';
 return (x);
 }
