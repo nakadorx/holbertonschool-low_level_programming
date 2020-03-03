@@ -14,10 +14,10 @@ if (str == NULL)
 return (NULL);
 while (str[i])
 i++;
-x = malloc(i *sizeof(char));
+x = malloc(i + 1 *sizeof(char));
 if (x == NULL)
 return (NULL);
-for (j = 0; j < i + 1; j++)
+for (j = 0; j < i; j++)
 x[j] = str[j];
 x[j] = '\0';
 return (x);
