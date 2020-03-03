@@ -15,7 +15,9 @@ return (NULL);
 while (str[i])
 i++;
 x = malloc(i *sizeof(char));
-for (j = 0; j < i; j++)
+if (x == NULL)
+return (NULL);
+for (j = 0; j < i + 1; j++)
 {
 x[j] = str[j];
 }
