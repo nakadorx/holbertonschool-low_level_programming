@@ -19,6 +19,13 @@ return (NULL);
 while (i < height)
 {
 M[i] = (int *)malloc(sizeof(int) * width);
+if (M[i] == NULL)
+{
+for (j = 0; j < i; j++)
+free(M[j]);
+free(M);
+return (NULL);
+}
 while (j < width)
 {
 *(M + i * height + j + 1) = 0;
