@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "holberton.h"
+
 /**
  * str_concat - check the code for Holberton School students.
  * @s1: int
@@ -26,7 +26,7 @@ while (s2[j])
 j++;
 }
 x = malloc((i + j + 1) * sizeof(char));
-if (x == 0)
+if (x == NULL)
 return (NULL);
 for (m = 0; m < i; m++)
 x[m] = s1[m];
@@ -35,3 +35,4 @@ x[m + i] = s2[m];
 x[i + j] = '\0';
 return (x);
 }
+
