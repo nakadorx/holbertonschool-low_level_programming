@@ -19,7 +19,7 @@ while (av[i][j])
 j++;
 i++;
 }
-x = malloc((i + j + 1) * sizeof(char));
+x = malloc(( j + 1) + i * sizeof(char));;
 if (x == NULL)
 return (NULL);
 for (i = 0 ; i < ac ; i++)
@@ -32,5 +32,6 @@ y++;
 x[y] = '\n';
 y++;
 }
+x[y] = '\0';
 return (x);
 }
