@@ -10,8 +10,7 @@
 int main(void)
 {
     char *s;
-
-    s = str_concat("ferf", NULL);
+    s = str_concat("ferf", "a");
     if (s == NULL)
     {
         printf("failed\n");
