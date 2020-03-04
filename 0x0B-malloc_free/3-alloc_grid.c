@@ -13,7 +13,7 @@ int i = 0, j = 0;
 int **M;
 if (width <= 0 || height <= 0)
 return (NULL);
-M = (int **)malloc(sizeof(int *) * height + 1);
+M = (int **)malloc(sizeof(int *) * height);
 if (M == NULL)
 return (NULL);
 while (i < height)
