@@ -22,19 +22,15 @@ i++;
 x = malloc((i + j + 1) * sizeof(char));
 if (x == NULL)
 return (NULL);
-j = 0;
-i = 0;
-while (i < ac)
+for (i = 0 ; i < ac ; i++)
 {
-while (av[i][j])
+for (j = 0 ; av[i][j] ; j++)
 {
 x[y] = av[i][j];
 y++;
-j++;
 }
 x[y] = '\n';
 y++;
-i++;
 }
 x[y] = '\0';
 return (x);
