@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 /**
  * free_grid - check the code for Holberton School students.
@@ -9,10 +9,10 @@
  */
 void free_grid(int **grid, int height)
 {
-int i = 0;
+int i;
 if (grid == NULL || height <= 0)
 return;
-for  (;i < height ; i++)
+for  (i = 0; i < height ; i++)
 free(grid[i]);
 free(grid);
 }
