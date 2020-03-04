@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include "holberton.h"
 /**
  * str_concat - check the code for Holberton School students.
  * @s1: int
