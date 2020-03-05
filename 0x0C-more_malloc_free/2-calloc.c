@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * string_nconcat - check the code for Holberton School students.
- * @s1: int
- * @s2: int
- * @n: int
+ * _calloc - check the code for Holberton School students.
+ * @_calloc: int
+ * @size: int
  * Return: Always 0.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
