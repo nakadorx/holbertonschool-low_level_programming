@@ -3,7 +3,7 @@
 #include "holberton.h"
 /**
  * _calloc - check the code for Holberton School students.
- * @_calloc: int
+ * @nmemb: int
  * @size: int
  * Return: Always 0.
  */
