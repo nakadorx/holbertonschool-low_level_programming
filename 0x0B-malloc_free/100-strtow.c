@@ -1,23 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
-
-
-for (i = 0 ; str ; i++)
-{
-if (!str[i] == ' ')
-{
-z++;
-x = strlen(str + i);
-for (j = 0 ; j < x ; j++)
-{
-a[j] = str[i + x];
-}
-a[j + 1] = ' ';
-i = i + x + 1;
-}
-
-
 /**
 * _strlen - check the code for Holberton School students.
 * @s : char
@@ -43,7 +26,19 @@ int i, j, x, l, z = 0;
 char *a, *r;
 if (str == NULL || *str == '\0')
 return (NULL);
-a = remake(str);
+for (i = 0 ; str ; i++)
+{
+if (!str[i] == ' ')
+{
+z++;
+x = strlen(str + i);
+for (j = 0 ; j < x ; j++)
+{
+a[j] = str[i + x];
+}
+a[j + 1] = ' ';
+i = i + x + 1;
+}
 }
 r = (char **)malloc((z + 1) * sizeof(char *));
 if (r == NULL)
