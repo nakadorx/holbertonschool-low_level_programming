@@ -24,9 +24,10 @@ return (ptr);
 else if (new_size == old_size)
 return (ptr);
 if (new_size > old_size)
-return (ptr);
-else
-ptr = malloc(new_size);
+{
 free(ptr);
+ptr = malloc(new_size);
+return (ptr);
+}
 return (ptr);
 }
