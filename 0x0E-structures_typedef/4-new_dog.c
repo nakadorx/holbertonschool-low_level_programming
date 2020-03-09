@@ -1,5 +1,4 @@
  #include "dog.h"
- #include <stdio.h>
 /**
  * new_dog - check the code for Holberton School students.
  * @name : int
