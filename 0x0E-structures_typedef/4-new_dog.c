@@ -1,4 +1,7 @@
- #include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
+
 /**
  * new_dog - check the code for Holberton School students.
  * @name : int
@@ -18,7 +21,7 @@ while (name[j])
 j++;
 while (owner[x])
 x++;
-d->name = malloc(sizeof(char) * (l + 1));
+d->name = malloc(sizeof(char) * (j + 1));
 if (d->name == NULL)
 {
 free(d);
@@ -31,16 +34,8 @@ free(d->name);
 free(d);
 return (NULL);
 }
-d->age = malloc(sizeof(int));
-if (d->age == NULL)
-{
-free(d->owner);
-free(d->name);
-free(d);
-return (NULL);
-}
 d->age = age;
-for (i = 0; i <= l; i++)
+for (i = 0; i <= j; i++)
 d->name[i] = name[i];
 for (i = 0; i <= x; i++)
 d->owner[i] = owner[i];
