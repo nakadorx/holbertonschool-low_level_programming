@@ -16,6 +16,6 @@ if (array && action)
 {
 while (i < size)
 action(array[i]);
-i++
+i++;
 }
 }
