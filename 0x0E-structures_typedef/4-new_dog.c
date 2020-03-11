@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-
 /**
  * new_dog - check the code for Holberton School students.
  * @name : int

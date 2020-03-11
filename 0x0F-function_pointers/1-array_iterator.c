@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 #include "function_pointers.h"
 /**
  * array_iterator - check the code for Holberton School students.
@@ -15,7 +16,9 @@ size_t i = 0;
 if (array && action)
 {
 while (i < size)
-action(array[i]);
+{
+action(*(array + i));
 i++;
+}
 }
 }
