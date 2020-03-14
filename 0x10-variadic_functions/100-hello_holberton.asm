@@ -1,5 +1,5 @@
 section .data
-    msg db 'Hello, Holberton',10
+    msg db 'Hello, Holberton',0xa
     len equ $-msg
 section .bss
 
@@ -11,6 +11,5 @@ _print:
     mov ecx,msg
     mov edx,len
     int 0x80
-    mov eax,1
-    mov ebx,0
+    mov eax,0
     int 0x80
