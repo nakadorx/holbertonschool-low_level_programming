@@ -3,8 +3,8 @@ section .data
 section .bss
 
 section .text
-global _print
-_print:
+global main
+main:
     mov eax,4
     mov ebx,1
     mov ecx,msg
