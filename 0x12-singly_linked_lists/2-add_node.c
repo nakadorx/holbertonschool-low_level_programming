@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * add_node - check the code for Holberton School students.
- * @h : int
+ * @head : int
  * @str : int
  * Return: Always 0.
  */
