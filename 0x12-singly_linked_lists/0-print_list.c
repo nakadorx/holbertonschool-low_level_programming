@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <stdio.h>
 #include "lists.h"
 /**
  * print_list - check the code for Holberton School students.
