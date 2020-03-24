@@ -1,4 +1,3 @@
-
 #include "lists.h"
 /**
  * listint_len - check the code for Holberton School students.
