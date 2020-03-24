@@ -9,8 +9,6 @@
 * @len: int
 * @next: int
 *
-* Description: singly linked list node structure
-* for Holberton project // Aladin Bensassi
 */
 typedef struct list_s
 {
