@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * insert_nodeint_at_index - check the code for Holberton School students.
+ * delete_nodeint_at_index - check the code for Holberton School students.
  * @head : int
  * @index : int
  * Return: Always 0.
