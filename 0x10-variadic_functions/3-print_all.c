@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <stdio.h>
 #include "variadic_functions.h"
 /**
  * print_all - check the code for Holberton School students.
@@ -50,3 +48,4 @@ i++;
 va_end(params);
 printf("\n");
 }
+
