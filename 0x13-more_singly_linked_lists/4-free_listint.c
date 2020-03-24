@@ -5,9 +5,9 @@
  * @head : int
  * Return: Always 0.
  */
-void free_listint(listint_t *head))
+void free_listint(listint_t *head)
 {
-	list_t *c;
+	listint_t *c;
 
 	while ((c = head) != NULL)
 	{
