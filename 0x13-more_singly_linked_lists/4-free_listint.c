@@ -1,4 +1,3 @@
-
 #include "lists.h"
 /**
  * free_listint - check the code for Holberton School students.
