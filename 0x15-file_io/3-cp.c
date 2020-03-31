@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 {
 	int file_from, file_to, file_close;
 	ssize_t rf, wf;
-	char *buf;
+	char buf[1024];
 
 	if (argc != 3)
 	err(97, 7, argv);
@@ -49,9 +49,6 @@ int main(int argc, char *argv[])
 		err(98, 8, argv);
 	if (file_to == -1)
 		err(99, 9, argv);
-	buf = malloc(sizeof(char) * 1024);
-	if (!buf)
-		return (0);
 	rf = read(file_from, buf, 1024);
 	if (rf == -1)
 		err(98, 8, argv);
