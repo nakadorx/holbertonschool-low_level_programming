@@ -16,10 +16,13 @@ int create_file(const char *filename, char *text_content)
 	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (file == -1)
 		return (-1);
-	while (text_content[i])
-		i++;
-	if (!text_content)
-		return (1);
+	if (text_content)
+	{
+		while (text_content[i])
+			i++;
+	}
+	else
+		text_content = "0";
 	wf = write(file, text_content, i);
 	if (wf == -1)
 		return (-1);
