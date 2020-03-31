@@ -11,19 +11,19 @@ void err(int n_er, int x, char *argv[])
 {
 	switch (x)
 	{
-	case '7':
+	case 7:
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		break;
-	case '8':
+	case 8:
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		break;
-	case '9':
+	case 9:
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		break;
-	case '1':
+	case 1:
 		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[1]);
 		break;
-	case '0':
+	case 0:
 		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]);
 		break;
 	}
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	err(97, 7, argv);
 	file_from = open(argv[1], O_RDONLY);
-	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_from == -1)
 		err(98, 8, argv);
 	if (file_to == -1)
