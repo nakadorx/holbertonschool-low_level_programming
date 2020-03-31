@@ -35,7 +35,7 @@ void err(int n_er, char *argv[], int val)
 int main(int argc, char *argv[])
 {
 	int file_from, file_to;
-	ssize_t rf, wf;
+	ssize_t rf = 1024, wf;
 	char buf[1024];
 
 	if (argc != 3)
@@ -46,12 +46,15 @@ int main(int argc, char *argv[])
 		err(98, argv, 0);
 	if (file_to == -1)
 		err(99, argv, 0);
-	rf = read(file_from, buf, 1024);
-	if (rf == -1)
-		err(98, argv, 0);
-	wf = write(file_to, buf, rf);
-	if (wf == -1)
-		err(99, argv, 0);
+	while (rf == 1024)
+	{
+		rf = read(file_from, buf, 1024);
+		if (rf == -1)
+			err(98, argv, 0);
+		wf = write(file_to, buf, rf);
+		if (wf == -1)
+			err(99, argv, 0);
+	}
 	if (close(file_from) == -1)
 		err(100, argv, file_from);
 	if (close(file_to) == -1)
