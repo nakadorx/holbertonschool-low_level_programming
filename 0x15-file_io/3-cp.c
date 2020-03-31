@@ -46,15 +46,14 @@ int main(int argc, char *argv[])
 		err(98, argv, 0);
 	if (file_to == -1)
 		err(99, argv, 0);
-	while (rf > 0)
+	while ((rf = read(file_from, buf, 1024)) > 0)
 	{
-		rf = read(file_from, buf, 1024);
-		if (rf == -1)
-			err(98, argv, 0);
 		wf = write(file_to, buf, rf);
 		if (wf == -1)
 			err(99, argv, 0);
-	}
+	}	
+	if (rf == -1)
+		err(98, argv, 0);
 	if (close(file_from) == -1)
 		err(100, argv, file_from);
 	if (close(file_to) == -1)
