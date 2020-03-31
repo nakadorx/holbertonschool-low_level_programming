@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		err(98, argv, 0);
 	if (file_to == -1)
 		err(99, argv, 0);
-	while (rf == 1024)
+	while (rf > 0)
 	{
 		rf = read(file_from, buf, 1024);
 		if (rf == -1)
