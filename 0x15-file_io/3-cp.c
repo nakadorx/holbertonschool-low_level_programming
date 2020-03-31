@@ -4,27 +4,23 @@
  * err - check the code for Holberton School students.
  * @n_er : int
  * @argv : int
- * @x : int
  * Return: Always 0.
  */
-void err(int n_er, int x, char *argv[])
+void err(int n_er, char *argv[], int val __attribute__((unused)))
 {
-	switch (x)
+	switch (n_er)
 	{
-	case 7:
+	case 97:
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to \n");
 		break;
-	case 8:
+	case 98:
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		break;
-	case 9:
+	case 99:
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		break;
-	case 1:
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[1]);
-		break;
-	case 0:
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]);
+	case 100:
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", val);
 		break;
 	}
 	exit(n_er);
@@ -42,24 +38,24 @@ int main(int argc, char *argv[])
 	char buf[1024];
 
 	if (argc != 3)
-	err(97, 7, argv);
+	err(97, argv, 0);
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_from == -1)
-		err(98, 8, argv);
+		err(98, argv, 0);
 	if (file_to == -1)
-		err(99, 9, argv);
+		err(99, argv, 0);
 	rf = read(file_from, buf, 1024);
 	if (rf == -1)
-		err(98, 8, argv);
+		err(98, argv, 0);
 	wf = write(file_to, buf, rf);
 	if (wf == -1)
-		err(99, 9, argv);
+		err(99, argv, 0);
 	file_close = close(file_from);
 	if (file_close == -1)
-		err(100, 1, argv);
+		err(100, argv, file_from);
 	file_close = close(file_to);
 	if (file_close == -1)
-		err(100, 0, argv);
+		err(100, argv, file_to);
 	return (0);
 }
