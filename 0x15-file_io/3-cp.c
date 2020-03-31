@@ -4,9 +4,10 @@
  * err - check the code for Holberton School students.
  * @n_er : int
  * @argv : int
+ * @val : int
  * Return: Always 0.
  */
-void err(int n_er, char *argv[], int val __attribute__((unused)))
+void err(int n_er, char *argv[], int val)
 {
 	switch (n_er)
 	{
