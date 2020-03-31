@@ -12,7 +12,7 @@ void err(int n_er, char *argv[], int val)
 	switch (n_er)
 	{
 	case 97:
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to \n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		break;
 	case 98:
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 		wf = write(file_to, buf, rf);
 		if (wf == -1)
 			err(99, argv, 0);
-	}	
+	}
 	if (rf == -1)
 		err(98, argv, 0);
 	if (close(file_from) == -1)
