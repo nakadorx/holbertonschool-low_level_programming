@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * create_file - check the code for Holberton School students.
+ * append_text_to_file - check the code for Holberton School students.
  * @text_content : int
  * @filename : int
  * Return: Always 0.
@@ -13,7 +13,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	file = open(filename, O_WRONLY | O_APPEND 0600);
+	file = open(filename, O_WRONLY | O_APPEND, 0600);
 	if (file == -1)
 		return (-1);
 	while (text_content[i])
