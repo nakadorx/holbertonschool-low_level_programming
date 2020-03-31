@@ -34,7 +34,7 @@ void err(int n_er, char *argv[], int val)
  */
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, file_close;
+	int file_from, file_to;
 	ssize_t rf, wf;
 	char buf[1024];
 
@@ -52,11 +52,9 @@ int main(int argc, char *argv[])
 	wf = write(file_to, buf, rf);
 	if (wf == -1)
 		err(99, argv, 0);
-	file_close = close(file_from);
-	if (file_close == -1)
+	if (close(file_from) == -1)
 		err(100, argv, file_from);
-	file_close = close(file_to);
-	if (file_close == -1)
+	if (close(file_to) == -1)
 		err(100, argv, file_to);
 	return (0);
 }
