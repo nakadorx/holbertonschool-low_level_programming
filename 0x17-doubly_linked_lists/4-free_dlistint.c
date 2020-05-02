@@ -7,6 +7,7 @@
 void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *n;
+
 	if (head)
 		while (head->prev)
 			head = head->prev;

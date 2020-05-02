@@ -6,8 +6,8 @@
 */
 int sum_dlistint(dlistint_t *head)
 {
-	int x;
-	x = 0;
+	int x = 0;
+
 	if (head)
 	{
 		while (head->prev)
