@@ -1,10 +1,9 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- * _islower - Entry point
- * @c: for letters
- * Return: Always 0 (Success)
- */
+*_islower -show if low case or not
+* @c : variable pour le check
+* Return: 0 (mean true )
+**/
 int _islower(int c)
 {
 if (c >= 'a' && c <= 'z')
