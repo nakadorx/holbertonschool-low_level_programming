@@ -1,12 +1,13 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * _islower - check the code for Holberton School students.
- *  @c : char to check
- * Return: Always 0.
+ * _islower - Entry point
+ * @c: for letters
+ * Return: Always 0 (Success)
  */
 int _islower(int c)
 {
-if (c >= 97 && c <= 122)
+if (c >= 'a' && c <= 'z')
 {
 return (1);
 }
